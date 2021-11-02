@@ -163,6 +163,19 @@
       "oAP" : "\/assets\/images\/moon.psd",
       "oF" : 0
     },
+    "\/assets\/images\/mountains-behind copy.png" : {
+      "ft" : 32768,
+      "iS" : 162807,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mountains-behind copy.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/mountains-behind.png" : {
       "ft" : 32768,
       "iS" : 162807,
@@ -775,7 +788,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 646600803.97219706,
-    "displayValue" : "portfolio",
+    "displayValue" : "portfolio-2021",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-payne",
     "iconImageWasSetByUser" : 0
