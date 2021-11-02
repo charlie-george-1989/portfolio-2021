@@ -8,7 +8,7 @@ to global.scss at the end of every project to cater for devices that have variab
 
 // Git instructions
 git init
-git remote add origin https://github.com/charlie-george-1989/portfolio.git
+git remote add origin https://github.com/charlie-george-1989/portfolio-2021.git
 git remote -v
 git add .
 git commit -m "initial commit"
