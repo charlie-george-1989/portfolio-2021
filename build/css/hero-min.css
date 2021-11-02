@@ -1,0 +1,41 @@
+.hero-section {
+  height: 20rem;
+  z-index: 2;
+}
+.hero-section .wrapper {
+  height: 100%;
+  width: 100%;
+}
+.hero-section .wrapper .container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: var(--p4) 0;
+}
+.hero-section .wrapper .container .heading {
+  color: var(--text--colour);
+  padding: 0;
+}
+.hero-section .wrapper .container .body {
+  color: var(--text--colour);
+  padding: 0;
+}
+
+@media (min-width: 48rem) {
+  .hero-section {
+    height: 40rem;
+  }
+  .hero-section .wrapper .container {
+    align-items: flex-start;
+  }
+}
+@media (min-width: 60rem) {
+  .hero-section .wrapper .container {
+    padding: 0;
+  }
+}
+
+/*# sourceMappingURL=hero-min.css.map */

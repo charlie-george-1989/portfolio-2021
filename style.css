@@ -1,0 +1,405 @@
+/* Theme Name: Portfolio
+Author: Charlie George
+Description: Portfolio 2021
+Version: 1.0 */
+@import url("https://use.typekit.net/wkw8uis.css");
+.site-header-container {
+  margin-bottom: 3rem;
+  position: sticky;
+}
+.site-header-container .site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: var(--p) 0;
+}
+.site-header-container .site-header .site-logo-container .logo,
+.site-header-container .site-header .site-logo-container .logo-bg {
+  position: absolute;
+}
+.site-header-container .site-header .site-menu-toggle-container .menu-button {
+  background: none;
+  border: none;
+  padding: 0;
+}
+.site-header-container .site-header .site-menu-toggle-container .menu-button .material-icons {
+  font-size: 3rem;
+}
+.site-header-container .site-header .site-nav {
+  display: none;
+}
+.site-header-container .site-header .site-nav.revealed {
+  display: block;
+  width: 100%;
+}
+.site-header-container .site-header .site-nav > ul {
+  text-align: center;
+}
+.site-header-container .site-header .site-nav > ul > li {
+  width: 100%;
+}
+.site-header-container .site-header .site-nav > ul > li a {
+  text-decoration: none;
+  color: var(--grey-100);
+}
+.site-header-container .site-header .site-nav > ul > li > ul {
+  display: none;
+}
+.site-header-container .site-header .site-nav > ul > li .sub-menu-toggle {
+  background: none;
+  border: none;
+  position: absolute;
+  top: -0.1rem;
+}
+.site-header-container .site-header .site-nav > ul > li.sub-menu-open > button {
+  transform: rotate(180deg);
+}
+.site-header-container .site-header .site-nav > ul > li.sub-menu-open > ul {
+  display: block;
+}
+
+@media (min-width: 48rem) {
+  .site-header-container .site-header .site-menu-toggle-container {
+    display: none;
+  }
+  .site-header-container .site-header .site-nav {
+    display: block;
+  }
+  .site-header-container .site-header .site-nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .site-header-container .site-header .site-nav > ul li + li {
+    margin-left: var(--p);
+  }
+  .site-header-container .site-header .site-nav > ul li.menu-item-has-children button {
+    display: none;
+  }
+  .site-header-container .site-header .site-nav > ul li.menu-item-has-children > ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+  .site-header-container .site-header .site-nav > ul li.menu-item-has-children > ul a {
+    padding: var(--p-2);
+  }
+  .site-header-container .site-header .site-nav > ul li.menu-item-has-children > ul li {
+    border-top: 1px solid black;
+  }
+  .site-header-container .site-header .site-nav > ul li.menu-item-has-children:hover > ul {
+    display: block;
+  }
+  .site-header-container .site-header .site-nav > ul li a:hover {
+    color: var(--white);
+  }
+}
+.v-hidden {
+  clip-path: inset(100%) !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.wrapper {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 var(--p);
+}
+
+.te-stack > * + * {
+  margin-top: var(--p);
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+p {
+  padding-bottom: var(--p);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--white);
+}
+
+img {
+  object-fit: contain;
+  height: 20rem;
+}
+
+body {
+  background-color: var(--black);
+}
+
+footer {
+  color: var(--grey-100);
+}
+footer .site-footer {
+  text-align: center;
+  padding: var(--p2) 0;
+}
+footer .site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+footer .site-footer .footer-widgets > li + li {
+  margin-top: var(--p);
+  text-decoration: none;
+}
+footer .sub-footer {
+  text-align: center;
+  padding: var(--p-2);
+  font-size: 0.875rem;
+}
+footer .sub-footer > * + * {
+  margin-top: var(--p-2);
+  text-decoration: none;
+}
+footer .sub-footer p a {
+  text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+  footer .site-footer {
+    text-align: left;
+    padding: var(--p4) 0;
+  }
+  footer .site-footer .footer-widgets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  footer .site-footer .footer-widgets > li + li {
+    margin-top: 0;
+    margin-left: var(--p2);
+  }
+  footer .sub-footer {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .sub-footer > * + * {
+    margin-top: 0;
+    margin-left: var(--p);
+  }
+}
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--grey-100);
+  line-height: 1.5;
+  font-size: 1.25rem;
+}
+
+.canvas {
+  position: relative;
+  height: 100vh;
+  padding: var(--p);
+}
+.canvas img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#content {
+  position: relative;
+}
+
+.site-logo #logo {
+  height: 60px;
+  width: 60px;
+  z-index: 2;
+}
+.site-logo #logo .inner-line {
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 6;
+  stroke-dasharray: 97;
+  stroke-dashoffset: 97;
+  animation: innerDrawBackwards 0.6s ease forwards;
+}
+@keyframes innerDrawForwards {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 97;
+  }
+}
+@keyframes innerDrawBackwards {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 97;
+  }
+}
+.site-logo #logo .outer-line {
+  fill: none;
+  stroke: var(--white);
+  stroke-width: 6;
+  stroke-dasharray: 222;
+  stroke-dashoffset: 222;
+  animation: outerDrawBackwards 0.6s ease forwards;
+}
+@keyframes outerDrawForwards {
+  to {
+    stroke-dashoffset: 0;
+  }
+  from {
+    stroke-dashoffset: 222;
+  }
+}
+@keyframes outerDrawBackwards {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 222;
+  }
+}
+.site-logo:hover #logo .inner-line {
+  animation: innerDrawForwards 0.6s ease forwards;
+}
+.site-logo:hover #logo .outer-line {
+  animation: outerDrawForwards 0.6s ease forwards;
+}
+
+.site-logo #logo-bg {
+  height: 60px;
+  width: 60px;
+  z-index: 1;
+}
+.site-logo #logo-bg .inner-line-bg {
+  fill: none;
+  stroke: grey;
+  stroke-width: 6;
+}
+.site-logo #logo-bg .outer-line-bg {
+  fill: none;
+  stroke: grey;
+  stroke-width: 6;
+}
+
+:root {
+  --p-4: calc(var(--p-2) / 2);
+  --p-2: calc(var(--p) / 2);
+  --p: 1rem;
+  --p2: calc(var(--p) * 2);
+  --p4: calc(var(--p2) * 2);
+  --grey-100: #888;
+  --grey-300: #666;
+  --black: #000;
+  --red: #ff0000;
+  --white: #ffffff;
+  --font-family: "futura-pt", sans-serif;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + *,
+.wp-block-column > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+* {
+  position: relative;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,26 @@
+<svg
+id="logo"
+xmlns='http://www.w3.org/2000/svg'
+xmlns:xlink='http://www.w3.org/1999/xlink'>
+
+  <polyline class="outer-line"
+    points="
+    60,3
+    3,3
+    3,57
+    57,57
+    57,30
+    27,30
+    "
+  />
+
+  <polyline class="inner-line"
+    points="
+    60,17
+    17,17
+    17,43
+    45,43
+    "
+  />
+
+</svg>

@@ -1,0 +1,17 @@
+:root {
+  --p-4: calc(var(--p-2) / 2);
+  --p-2: calc(var(--p) / 2);
+  --p: 1rem;
+  --p2: calc(var(--p) * 2);
+  --p4: calc(var(--p2) * 2);
+
+  --grey-100: #888;
+  --grey-300: #666;
+  --black: #000;
+  --red: #ff0000;
+  --white: #ffffff;
+
+
+  --font-family: 'futura-pt', sans-serif;
+
+}

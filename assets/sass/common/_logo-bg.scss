@@ -1,0 +1,22 @@
+.site-logo {
+
+  #logo-bg {
+    height: 60px;
+    width: 60px;
+    z-index: 1;
+
+    .inner-line-bg {
+      fill: none;
+      stroke: grey;
+      stroke-width: 6;
+
+    }
+
+    .outer-line-bg {
+      fill: none;
+      stroke: grey;
+      stroke-width: 6;
+
+    }
+  }
+}

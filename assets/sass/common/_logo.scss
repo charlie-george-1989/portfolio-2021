@@ -1,0 +1,60 @@
+.site-logo {
+
+  #logo {
+    height: 60px;
+    width: 60px;
+    z-index: 2;
+
+    .inner-line {
+      fill: none;
+      stroke: var(--white);
+      stroke-width: 6;
+      stroke-dasharray: 97;
+      stroke-dashoffset: 97;
+      animation: innerDrawBackwards .6s ease forwards;
+
+      @keyframes innerDrawForwards {
+        to { stroke-dashoffset: 0; }
+        from { stroke-dashoffset: 97; }
+      }
+
+      @keyframes innerDrawBackwards {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 97; }
+      }
+    }
+
+    .outer-line {
+      fill: none;
+      stroke: var(--white);
+      stroke-width: 6;
+      stroke-dasharray: 222;
+      stroke-dashoffset: 222;
+      animation: outerDrawBackwards .6s ease forwards;
+
+      @keyframes outerDrawForwards {
+        to { stroke-dashoffset: 0; }
+        from { stroke-dashoffset: 222; }
+      }
+
+      @keyframes outerDrawBackwards {
+        0% { stroke-dashoffset: 0; }
+        100% { stroke-dashoffset: 222; }
+      }
+    }
+  }
+
+  &:hover {
+
+    #logo {
+
+      .inner-line {
+        animation: innerDrawForwards .6s ease forwards;
+      }
+
+      .outer-line {
+        animation: outerDrawForwards .6s ease forwards;
+      }
+    }
+  }
+}

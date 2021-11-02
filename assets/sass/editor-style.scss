@@ -1,0 +1,154 @@
+@import "core/variables";
+
+// Global Styles
+.v-hidden {
+  clip-path: inset(100%) !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.main-wrapper > *  {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 var(--p);
+}
+
+.wrapper {
+  max-width: 68rem;
+  margin: 0 auto;
+}
+
+.te-stack {
+  > * + * {
+    margin-top: var(--p);
+  }
+}
+
+.full-bleed {
+  max-width: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+// Admin Styles
+.body#tinymce.wp-editor {
+  font-family: var(--font);
+  color: var(--grey-100);
+
+  h1,
+  .h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  h2,
+  .h2 {
+    font-size: 2rem;
+    line-height: 1.325;
+  }
+
+  .button,
+  button,
+  [type="submit"] {
+    appearance: none;
+    background: var(--primary-300);
+    display: inline-block;
+    padding: var(--p-2);
+    color: var(--grey-900);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 1px solid var(--primary-100);
+    box-shadow: 0 1px 1px var(--primary-100);
+    text-decoration: none;
+    transition: .4s;
+
+    &:hover,
+    &:focus {
+      background: var(--secondary-300);
+      border: 1px solid var(--secondary-100);
+      box-shadow: 0 1px 1px var(--secondary-100);
+    }
+
+    &.alt-button {
+      background: none;
+      border: 1px solid var(--grey-900);
+      box-shadow: 0 1px 1px var(--grey-900);
+
+      &:hover,
+      &:focus {
+        background: var(--secondary-300);
+        border: 1px solid var(--secondary-100);
+        box-shadow: 0 1px 1px var(--secondary-100);
+      }
+    }
+  }
+}
+
+.editor-styles-wrapper {
+  font-family: var(--font-family)!important;
+
+  .wp-block {
+    max-width: none!important;
+
+  }
+
+
+  .acf-block-preview {
+    min-height: 15rem;
+
+    .wrapper {
+      max-width: 104rem;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    h1,
+    .h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+    }
+
+    h2,
+    .h2 {
+      font-size: 2rem;
+      line-height: 1.325;
+      font-weight: normal;
+    }
+
+  }
+}
+
+@media (min-width: 782px) {
+  .interface-complementary-area {
+    width: 25vw;
+  }
+}
+
+.background-grey {
+  background: var(--bg-grey);
+  color: var(--white);
+}
+
+.background-teal {
+  background: var(--bg-teal);
+  color: var(--white);
+}
+
+.background-orange {
+  background: var(--bg-orange);
+  color: var(--white);
+}
+
+.background-none {
+  background: none;
+  color: var(--white);
+}
+
+// Hero Block
+.wp-block {
+
+}

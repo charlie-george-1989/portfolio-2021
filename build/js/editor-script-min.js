@@ -1,0 +1,2 @@
+!function(){"use strict";jQuery(document).ready((function(s){console.log("This is the editor script"),s(".wp-block").each((function(){console.log(s(this)),s(this).hasClass("wp-block")&&s(this).addClass("full-bleed")}))}))}();
+//# sourceMappingURL=editor-script-min.js.map

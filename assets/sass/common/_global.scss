@@ -1,0 +1,48 @@
+.v-hidden {
+  clip-path: inset(100%) !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
+  width: 1px !important;
+}
+
+.wrapper {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 0 var(--p);
+}
+
+.te-stack {
+  > * + * {
+    margin-top: var(--p);
+  }
+}
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}
+
+p {
+  padding-bottom: var(--p);
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+img {
+  object-fit: contain;
+  height: 20rem;
+}
+
+body {
+  background-color: var(--black);
+}
