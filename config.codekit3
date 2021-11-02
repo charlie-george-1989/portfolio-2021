@@ -189,6 +189,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/assets\/images\/mountains-front copy.png" : {
+      "ft" : 32768,
+      "iS" : 537599,
+      "oA" : 0,
+      "oAP" : "\/assets\/images\/mountains-front copy.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/assets\/images\/mountains-front.png" : {
       "ft" : 32768,
       "iS" : 537599,
