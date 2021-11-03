@@ -1,0 +1,114 @@
+.whats-on-section {
+
+  .row-section:nth-child(odd) {
+
+    .wrapper {
+
+      .row {
+        display: flex;
+
+        .left-col {
+          width: 60%;
+
+          .link {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+              filter: brightness(.5);
+            }
+
+            .title {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 25%;
+              width: 100%;
+            }
+          }
+        }
+
+        .right-col {
+          width: 40%;
+
+          .link {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+              filter: brightness(.5);
+            }
+
+            .title {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 25%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .row-section:nth-child(even) {
+
+    .wrapper {
+
+      .row {
+        display: flex;
+
+        .left-col {
+          width: 40%;
+
+          .link {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+              filter: brightness(.5);
+            }
+
+            .title {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 25%;
+              width: 100%;
+            }
+          }
+        }
+
+        .right-col {
+          width: 60%;
+
+          .link {
+            width: 100%;
+            height: 100%;
+
+            img {
+              width: 100%;
+              object-fit: cover;
+              filter: brightness(.5);
+            }
+
+            .title {
+              position: absolute;
+              left: 0;
+              bottom: 0;
+              height: 25%;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

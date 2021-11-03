@@ -18,6 +18,25 @@
       'align' => false,
     ),
   ));
+
+  acf_register_block_type(array(
+    'name'              => 'whats-on',
+    'title'             => __('Whats On', 'charlie-george'),
+    'description'       => __('A block to display recent posts', 'charlie-george'),
+    'render_template'   => 'blocks/whats-on.php',
+    'category'          => 'cg',
+    'icon'              => 'cover-image',
+    'mode'              => 'preview',
+    'keywords'          => array( 'whats on', 'cg', 'charlie-george' ),
+    'enqueue_assets'    => function(){
+      wp_enqueue_style( 'CG > Blocks > Whats On > CSS', get_template_directory_uri() . '/build/css/partials/whats-on-min.css' );
+    },
+    'supports'          => array(
+      'mode'  => true,
+      'align' => false,
+    ),
+  ));
+
 }
 
 // Check if function exists and hook into setup.

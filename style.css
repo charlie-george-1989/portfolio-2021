@@ -1,4 +1,4 @@
-/* Theme Name: Portfolio
+/* Theme Name: Portfolio 2021
 Author: Charlie George
 Description: Portfolio 2021
 Version: 1.0 */
@@ -143,60 +143,12 @@ body {
   background-color: var(--black);
 }
 
-footer {
-  color: var(--grey-100);
-}
-footer .site-footer {
+footer p {
   text-align: center;
-  padding: var(--p2) 0;
-}
-footer .site-footer ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-footer .site-footer .footer-widgets > li + li {
-  margin-top: var(--p);
-  text-decoration: none;
-}
-footer .sub-footer {
-  text-align: center;
-  padding: var(--p-2);
-  font-size: 0.875rem;
-}
-footer .sub-footer > * + * {
-  margin-top: var(--p-2);
-  text-decoration: none;
-}
-footer .sub-footer p a {
-  text-decoration: none;
+  font-size: 1rem;
+  padding: var(--p) 0;
 }
 
-@media (min-width: 48rem) {
-  footer .site-footer {
-    text-align: left;
-    padding: var(--p4) 0;
-  }
-  footer .site-footer .footer-widgets {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  footer .site-footer .footer-widgets > li + li {
-    margin-top: 0;
-    margin-left: var(--p2);
-  }
-  footer .sub-footer {
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  footer .sub-footer > * + * {
-    margin-top: 0;
-    margin-left: var(--p);
-  }
-}
 * {
   scroll-behavior: smooth;
 }

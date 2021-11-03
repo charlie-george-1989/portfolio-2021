@@ -21,9 +21,7 @@ list( $today_year, $today_month, $today_day, $hour, $minute, $second ) = preg_sp
 
 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
 
-  <section id="content">
-    <?php the_content(); ?>
-  </section>
+  <?php the_content(); ?>
 
 <?php endwhile; else: endif; ?>
 
