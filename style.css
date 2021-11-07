@@ -129,6 +129,7 @@ p {
 a {
   color: var(--text);
   text-decoration: none;
+  transition: 0.3s;
 }
 a:hover {
   color: var(--white);

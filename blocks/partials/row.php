@@ -11,19 +11,29 @@
 
       <div class="left-col">
         <a class="link" href="<?php echo get_the_permalink($post_1); ?>">
-          <?php echo get_the_post_thumbnail($post_1); ?>
-          <div class="title">
-            <h3><?php echo get_the_title($post_1); ?></h3>
+          <div class="container">
+            <?php echo get_the_post_thumbnail($post_1); ?>
+            <div class="title">
+              <h3><?php echo get_the_title($post_1); ?></h3>
+            </div>
           </div>
+        </a>
+        <a class="favourite" href="#">
+          <?php echo file_get_contents( get_template_directory() . '/assets/svg/heart.svg' ) ?>
         </a>
       </div>
 
       <div class="right-col">
         <a class="link" href="<?php echo get_the_permalink($post_2); ?>">
-          <?php echo get_the_post_thumbnail($post_2); ?>
-          <div class="title">
-            <h3><?php echo get_the_title($post_2); ?></h3>
+          <div class="container">
+            <?php echo get_the_post_thumbnail($post_2); ?>
+            <div class="title">
+              <h3><?php echo get_the_title($post_2); ?></h3>
+            </div>
           </div>
+        </a>
+        <a class="favourite" href="#">
+          <?php echo file_get_contents( get_template_directory() . '/assets/svg/heart.svg' ) ?>
         </a>
       </div>
 

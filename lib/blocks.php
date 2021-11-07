@@ -25,11 +25,11 @@
     'description'       => __('A block to display recent posts', 'charlie-george'),
     'render_template'   => 'blocks/whats-on.php',
     'category'          => 'cg',
-    'icon'              => 'cover-image',
+    'icon'              => 'admin-page',
     'mode'              => 'preview',
     'keywords'          => array( 'whats on', 'cg', 'charlie-george' ),
     'enqueue_assets'    => function(){
-      wp_enqueue_style( 'CG > Blocks > Whats On > CSS', get_template_directory_uri() . '/build/css/partials/whats-on-min.css' );
+      wp_enqueue_style( 'CG > Blocks > Whats On > CSS', get_template_directory_uri() . '/build/css/whats-on-min.css' );
     },
     'supports'          => array(
       'mode'  => true,
